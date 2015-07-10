@@ -23,3 +23,4 @@ npm run serve
 * `clean`: elimina el directorio `node_modules`
 * `jade`: Solo usalo una vez para compilar el layout donde cargaras el js de la apliacación
 * `serve`: corre un servidor web básico para servir la aplicación
+# PokemonAjaxLocalStorage
