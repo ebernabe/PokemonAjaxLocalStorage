@@ -25,7 +25,9 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules",
-    "serve": "http-server .",
-    "jade" : "jade lib/index.jade --out ./"
+    "js":"browserify public/js/marvel-api.js -t babelify > public/js/marvelapi.js",
+    "serve": "http-server ./public",
+    "jade" : "jade --watch --pretty ./lib/*.jade --out ./public",
+    "styl": "stylus --use nib --compress --watch ./lib/app.styl --out ./public/css"
   }
 }
